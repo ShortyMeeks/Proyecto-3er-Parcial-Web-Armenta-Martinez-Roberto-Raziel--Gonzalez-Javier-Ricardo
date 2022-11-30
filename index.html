@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RxZy-HW</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+</head>
+<body>
+    <div class="img-de-fondo">
+        <div class="logo">
+            <!--ESTE ES LA CABECERA DE NUESTRO DOCUMENTO INDEX-->
+            <header class="header">
+                <table>
+                <tr>
+                <td rowspan="2" colspan="5">
+                <a href="/index.html">
+                <img src="/IMG/rxzy.png" alt="logo" class="logo-img">
+                </a>
+                </td>
+                <td rowspan="2" colspan="5">
+                <script>
+                    function startTime(){
+                    today=new Date();
+                    horas=today.getHours();
+                    minutos=today.getMinutes();
+                    segundos=today.getSeconds();
+                    minutos=checkTime(minutos);
+                    segundos=checkTime(segundos);
+                    document.getElementById('reloj').innerHTML=horas+":"+minutos+":"+segundos;
+                    tiempo=setTimeout('startTime()',500);}
+                    function checkTime(i)
+                    {if (i<10) {i="0" + i;}return i;}
+                    window.onload=function(){startTime();}
+                    </script>
+                    <div id="reloj" style="color: white; font-family: Antihero;font-size:50px;"></div>
+                </td> 
+
+                </table>
+                </header>
+            <!---FIN DEL HEADER-->
+            <nav>
+                <a href="index.html">Tienda</a>
+                <a href="nosotros.html">Acerca De Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+
+            <div class="slider-frame">
+                <ul>
+                    <li><img src="/IMG/Promo.jpg" alt=""></li>
+                    <li><img src="/IMG/Dark.jpg" alt=""></li>
+                    <li><img src="/IMG/Corsair.jpg" alt=""></li>
+                    <li><img src="/IMG/Amd.png" alt=""></li>
+                </ul>
+            </div>
+
+            <!--AQUI INICIA EL CONTENIDO PRINCIPAL-->
+            <main class="contenedor">
+                <h1 class="aviso">Esta pagina es una recopiladora de precios!</h1>
+                <h1 class="nuestros-productos">Productos</h1>
+
+                <!--INICIO PRODUCTOS-->
+                <div class="productos">
+
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+                        <div class="producto-blanco">
+                            <img src="/IMG/rtx.png" alt="RTX 3060TI">
+                        </div>
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Nvidia Geforce RTX 3060 TI MSI</p>
+                            <p class="producto-precio">$10,531</p>
+                            <a href="https://www.amazon.com.mx/MSI-GeForce-RTX-3060-LHR/dp/B0995TBTLS/ref=sr_1_1?keywords=geforce+rtx+3060+ti&qid=1669692861&qu=eyJxc2MiOiI0LjI0IiwicXNhIjoiMy44OSIsInFzcCI6IjIuMzIifQ%3D%3D&sprefix=Geforce+rt%2Caps%2C145&sr=8-1&ufe=app_do%3Aamzn1.fos.649fe0ca-1cbf-43f1-a365-f15699263f39"><button>Comprar</button></a>
+                        </div>
+
+
+                    </div>
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto"> 
+                        <div class="producto-blanco">
+                            <img src="/IMG/aoc.png" alt="Monitor Aoc">
+                        </div>
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">AOC C27G2Z</p>
+                            <p class="producto-precio">$4770</p>
+                            <a href="https://www.amazon.com.mx/AOC-C27G2Z-pulgadas-FreeSync-ajustable/dp/B088LG2BSW/ref=sr_1_1?keywords=aoc+c27g2z&qid=1669692818&qu=eyJxc2MiOiIxLjY1IiwicXNhIjoiMC41MyIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=Aoc+c2%2Caps%2C197&sr=8-1&ufe=app_do%3Aamzn1.fos.649fe0ca-1cbf-43f1-a365-f15699263f39"><button>Comprar</button></a>
+                        </div>
+                    </div>
+
+
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+                        <div class="producto-blanco">
+                            <img src="/IMG/4000x.png" alt="Gabinete vengeance">
+                        </div>
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Gabinete ICUE 4000X RGB<br>(No incluye componentes)</p>
+                            <p class="producto-precio">$5000</p>
+                            <a href="https://www.amazon.com.mx/Corsair-iCUE-4000X-RGB-computadora/dp/B08C788312/ref=sr_1_1?keywords=gabinete+icue+4000x+rgb&qid=1669692954&qu=eyJxc2MiOiIxLjE5IiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=Gabinete+icue+40%2Caps%2C130&sr=8-1&ufe=app_do%3Aamzn1.fos.649fe0ca-1cbf-43f1-a365-f15699263f39"><button>Comprar</button></a>
+                        </div>
+                    </div>
+
+
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+                        <div class="producto-blanco">
+                            <img src="/IMG/gprox.jpg" alt="Logitech G Pro X Lightspeed">
+                        </div>
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Logitech G Pro X Superlight</p>
+                            <p class="producto-precio">$3299</p>
+                            <a href="https://www.amazon.com.mx/Logitech-PRO-SUPERLIGHT-Gaming-Inalámbrico/dp/B08TMCHQJM/ref=sr_1_1?__mk_es_MX=ÅMÅŽÕÑ&crid=W4E7MX5TK5OV&keywords=logitech+g+pro+x+superlight&qid=1669693095&qu=eyJxc2MiOiIzLjIwIiwicXNhIjoiMi4wNSIsInFzcCI6IjEuNTkifQ%3D%3D&sprefix=logitech+g+pro+x%2Caps%2C155&sr=8-1&ufe=app_do%3Aamzn1.fos.713a5ea8-28c8-4756-9a04-20c241c6dc4c"><button>Comprar</button></a>
+                        </div>
+                    </div>
+
+
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto"> 
+                        <div class="producto-blanco">
+                            <img src="/IMG/lightspeed.png" alt="Logitech G502 Lightspeed">
+                        </div>
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Logitech G502 Lightspeed</p>
+                            <p class="producto-precio">$3000</p>
+                            <a href="https://www.amazon.com.mx/Logitech-LIGHTSPEED-Inal%C3%A1mbrico-Programables-Iluminaci%C3%B3n/dp/B07DCSZV9Y/ref=sr_1_1?keywords=logitech+g502+lightspeed+wireless&qid=1669694138&qu=eyJxc2MiOiIyLjIwIiwicXNhIjoiMS4zMSIsInFzcCI6IjEuMDAifQ%3D%3D&sprefix=logitech+g+502+lig%2Caps%2C139&sr=8-1&ufe=app_do%3Aamzn1.fos.2f990652-065f-4ce4-905d-4c9d6a080141"><button>Comprar</button></a>
+                        </div>
+                    </div>
+
+
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+                        <div class="producto-blanco">
+                            <img src="/IMG/keyboard.png" alt="HyperX Alloy Origins Core">
+                        </div>
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">HyperX Alloy Origins Core</p>
+                            <p class="producto-precio">$2000</p>
+                            <a href="https://www.amazon.com.mx/HyperX-Interruptores-mecánicos-aluminio-iluminación/dp/B07YMHGP86/ref=sr_1_1?keywords=hyperx+alloy+origins+core&qid=1669693167&qu=eyJxc2MiOiIyLjgwIiwicXNhIjoiMi4xNiIsInFzcCI6IjIuMDYifQ%3D%3D&sprefix=Hyperx+alloy+%2Caps%2C137&sr=8-1&ufe=app_do%3Aamzn1.fos.713a5ea8-28c8-4756-9a04-20c241c6dc4c"><button>Comprar</button></a>
+                        </div>
+                    </div>
+
+
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+                        <div class="producto-blanco">
+                            <img src="/IMG/B550rog.png" alt="B550 Rog Strix">
+                        </div>
+
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">B550 Rog Strix</p>
+                            <p class="producto-precio">$4083</p>
+                           <a href="https://www.amazon.com.mx/Asus-Motherboard-ROG-B550-F-direccionable/dp/B09GP7P1XS/ref=sr_1_1?keywords=b550+rog+strix&qid=1669693212&qu=eyJxc2MiOiIyLjM3IiwicXNhIjoiMS45NCIsInFzcCI6IjAuOTcifQ%3D%3D&sprefix=B550+ROG%2Caps%2C152&sr=8-1&ufe=app_do%3Aamzn1.fos.649fe0ca-1cbf-43f1-a365-f15699263f39"><button>Comprar</button></a>
+                        </div>
+                    </div>
+
+
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+                        <div class="producto-blanco">
+                            <img src="/IMG/Vengeancergbpro.png" alt="Corsair Vengeance RGB Pro">
+                        </div>
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Corsair Vengeance Rgb Pro 2x8 DDR4 3200 MHz</p>
+                            <p class="producto-precio">$1850</p>
+                            <a href="https://www.amazon.com.mx/Corsair-Vengeance-CMW16GX4M2C3200C16W-3200MHz-módulo/dp/B07D5SN1ZK/ref=sr_1_2?keywords=corsair+vengeance+rgb+pro+16gb&qid=1669693258&qu=eyJxc2MiOiIyLjc0IiwicXNhIjoiMi40MCIsInFzcCI6IjIuMjAifQ%3D%3D&sprefix=Corsair+venge%2Caps%2C146&sr=8-2&ufe=app_do%3Aamzn1.fos.713a5ea8-28c8-4756-9a04-20c241c6dc4c"><button>Comprar</button></a>
+                        </div>
+                    </div>
+
+
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+                        <div class="producto-blanco">
+                            <img src="/IMG/Cx750.png" alt="Corsair CX750">
+                        </div>
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Corsair CX750</p>
+                            <p class="producto-precio">$2700</p>
+                            <a href="https://www.amazon.com.mx/Corsair-CX750-Fuente-Poder-Certificada/dp/B01N9KIFWF/ref=sr_1_1?__mk_es_MX=ÅMÅŽÕÑ&crid=21727M6N409KB&keywords=Corsair+cx750&qid=1669693300&qu=eyJxc2MiOiIyLjExIiwicXNhIjoiMi40OCIsInFzcCI6IjEuNjYifQ%3D%3D&sprefix=corsair+cx750%2Caps%2C137&sr=8-1&ufe=app_do%3Aamzn1.fos.649fe0ca-1cbf-43f1-a365-f15699263f39"><button>Comprar</button></a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!--FIN DEL CONTENIDO PRINCIPAL-->
+        </div>
+    </div>
+
+
+    <footer class="footer">
+    <p>Copyright© 2022-Todos los derechos reservados RxZy-HW</p>
+    </footer>
+</body>
+</html>

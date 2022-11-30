@@ -1,0 +1,176 @@
+html{
+    box-sizing: border-box;
+    font-size: 60.5%;
+}
+
+.slider-frame {
+	width: 1280px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+.aviso{
+    font-family: Antihero;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+button{
+    justify-content: space-around;
+    display: flex;
+    background-color: black;
+    font-family: antihero;
+    color: white;
+    font-size: 3rem;
+    font-weight: 300;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin: auto;
+}
+
+.img-de-fondo{
+background: url(/IMG/fndo.gif);
+background-size: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+.logo{
+    background-color:rgba(0, 0, 0, 0);
+}
+
+.contenedor{
+    max-width: 150rem;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img{
+    max-width: 40rem;
+    margin: 3rem 0;
+}
+
+nav{
+    margin: 3rem 0 8rem 0;
+    background-color: rgba(233, 227, 227, 0.768);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+a{
+    text-decoration: none;
+}
+nav a{
+    font-family: Antihero;
+    font-weight: 800;
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+}
+nav a:hover{
+    color: rgb(97, 17, 224);
+}
+
+.nuestros-productos{
+    font-family: Antihero;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.productos{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+
+   
+}
+.producto{
+    background-color: rgba(15, 9, 9, 0.768);;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.producto-blanco{
+    background-color: white;
+    height: 40rem;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+.producto-precio,
+.producto-nombre{
+    color: white;
+    font-family: Antihero;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.producto-precio{
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+.producto-nombre{
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.footer{
+    background-color: black;
+    padding: 3.5rem;
+    font-family: Antihero;
+    padding-bottom: 10rem;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+

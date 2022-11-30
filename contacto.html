@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RxZy-HW</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/estilo.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="img-de-fondo">
+
+        < class="logo">
+
+            <!-------------------------------------------------->
+            <!--ESTE ES LA CABECERA DE NUESTRO DOCUMENTO INDEX-->
+            <header class="header">
+                <table>
+                    <tr>
+                    <td rowspan="2" colspan="5">
+                    <a href="/index.html">
+                    <img src="/IMG/rxzy.png" alt="logo" class="logo-img">
+                    </a>
+                    </td>
+                    <td rowspan="2" colspan="5">
+                    <script>
+                        function startTime(){
+                        today=new Date();
+                        horas=today.getHours();
+                        minutos=today.getMinutes();
+                        segundos=today.getSeconds();
+                        minutos=checkTime(minutos);
+                        segundos=checkTime(segundos);
+                        document.getElementById('reloj').innerHTML=horas+":"+minutos+":"+segundos;
+                        tiempo=setTimeout('startTime()',500);}
+                        function checkTime(i)
+                        {if (i<10) {i="0" + i;}return i;}
+                        window.onload=function(){startTime();}
+                        </script>
+                        <div id="reloj" style="color: white; font-family: Antihero;font-size:50px;"></div>
+                    </td> 
+    
+                    </table>
+            </header>
+            <!---FIN DEL HEADER-->
+
+            <nav>
+                <a href="index.html">Tienda</a>
+                <a href="nosotros.html">Acerca de Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+
+             <!--ESTE ES EL INICIO DEL CONTENIDO PRINCIPAL-->
+            <div class="contenedor-formulario">
+                <div class="info-form">
+                    <h2>Contactanos</h2> 
+                    <p>Hola bienvenido a nuestro formulario de contacto, para continuar responde
+                        los siguientes campos.</p>
+                    <a href="#"><i class="fa fa-phone">56-1079-6394</i></a>
+                    <a href="#"><i class="fa fa-envelope">shorty_meeks@hotmail.com</i></a> 
+                    <a href="#"><i class="fa fa-map-marked">Ciudad De Mexico</i></a>  
+                </div>
+                <form action="mailto:shortymeeks@hotmail.com" method="get" enctype="text/plain" autocomplete="off">
+                    <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campo">
+                    <input type="email" name="email" placeholder="Ingresa tu correo electronico" class="campo">
+                    <textarea name="Mensaje" placeholder="Ingresa tu mensaje"></textarea>
+                    <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+                </form>
+            </div>    
+    <footer class="footer">     
+    <p>Copyright© 2022-Todos los derechos reservados RxZy-HW</p>  
+    </footer>
+ </body>
+ </html>
